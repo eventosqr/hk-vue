@@ -32,7 +32,15 @@ module.exports = function hkNuxt(moduleOptions) {
     }
   }
 
-  const pluginsToSync = ['store/index.js', 'plugin.js'];
+  if (options.registerStoreModules) {
+    this.addPlugin({
+      src: resolve(__dirname, 'store/index.js'),
+      fileName: join(namespace, 'store/index.js'),
+      options,
+    });
+  }
+
+  const pluginsToSync = ['plugin.js'];
   for (const pathString of pluginsToSync) {
     this.addPlugin({
       src: resolve(__dirname, pathString),

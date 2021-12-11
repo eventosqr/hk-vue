@@ -1,11 +1,16 @@
+const tw = require('./src/assets/hk-tailwind.config.js');
+
 module.exports = {
-  purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
-  darkMode: false, // or 'media' or 'class'
+  ...tw,
+
   theme: {
-    extend: {},
+    ...tw.theme,
+    extend: {
+      ...tw.theme.extend,
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+
+  purge: [],
+
+  darkMode: false, // or 'media' or 'class'
 };
