@@ -4,6 +4,13 @@
       <v-container class="space-y-6">
         <section>
           <v-layout column>
+            <h1 class="headline">hk-minus-plus-field</h1>
+            <hk-minus-plus-field label="Cantidad" :value="0"></hk-minus-plus-field>
+          </v-layout>
+        </section>
+
+        <section>
+          <v-layout column>
             <h1 class="headline">Cookie consent</h1>
             <v-layout align-center class="wrap p-2 gap-2">
               <v-chip>
@@ -62,10 +69,11 @@
 <script>
 import { VApp, VMain, VContainer, VLayout, VChip, VDataTable, VBtn } from 'vuetify/lib';
 import { mapState } from 'vuex';
+import HkMinusPlusField from './components/HkMinusPlusField/HkMinusPlusField';
 
 export default {
   name: 'App',
-  components: { VApp, VMain, VContainer, VLayout, VChip, VDataTable, VBtn },
+  components: { HkMinusPlusField, VApp, VMain, VContainer, VLayout, VChip, VDataTable, VBtn },
   async mounted() {
     await this.$store.dispatch('app/init');
   },

@@ -1,6 +1,6 @@
 {
   "name": "@eventosqr/hk-vue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "NODE_ENV=production vue-cli-service build --target lib --skip-plugins vuetify src/index.js",
@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "core-js": "^3.6.5",
+    "vee-validate": "^3.4.14",
     "vue": "^2.6.11",
     "vuetify": "^2.4.0",
     "vuex": "^3.6.2"
@@ -44,6 +45,7 @@
   },
   "peerDependencies": {
     "core-js": "^3.6.5",
+    "vee-validate": "^3.4.14",
     "vue": "^2.6.11",
     "vuetify": "^2.4.0",
     "vuex": "^3.6.2",
