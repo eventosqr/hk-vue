@@ -48,20 +48,8 @@
 </template>
 
 <script>
-import { extend, ValidationProvider } from 'vee-validate';
-import { max_value, min_value } from 'vee-validate/dist/rules';
-import { VTextField, VBtn, VIcon } from 'vuetify/lib';
-
-// extend('min_value', {
-//   ...min_value,
-//   params: ['min'],
-//   message: 'Debe ser mayor o igual a {min}',
-// });
-// extend('max_value', {
-//   ...max_value,
-//   params: ['max'],
-//   message: 'Debe ser menor o igual a {max}',
-// });
+import { ValidationProvider } from 'vee-validate';
+import { VBtn, VIcon, VTextField } from 'vuetify/lib';
 
 export default {
   name: 'HkMinusPlusField',
