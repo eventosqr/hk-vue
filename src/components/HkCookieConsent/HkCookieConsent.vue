@@ -3,7 +3,9 @@
     <v-flex :shrink="$vuetify.breakpoint.smAndUp">
       <v-layout wrap justify-center class="space-x-1">
         <span>{{ message }}</span>
-        <nuxt-link v-if="nuxt" to="/privacy" :alt="moreInfoText" class="text-blue-800 hover:underline">{{ moreInfoText }}</nuxt-link>
+        <nuxt-link v-if="nuxt" to="/privacy" :alt="moreInfoText" class="text-blue-800 hover:underline">{{
+          moreInfoText
+        }}</nuxt-link>
         <a v-else href="/privacy" :alt="moreInfoText" class="text-blue-800 hover:underline">{{ moreInfoText }}</a>
       </v-layout>
     </v-flex>

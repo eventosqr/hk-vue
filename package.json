@@ -1,10 +1,12 @@
 {
   "name": "@eventosqr/hk-vue",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "NODE_ENV=production vue-cli-service build --target lib --skip-plugins vuetify src/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
   "main": "dist/hk-vue.umd.js",
   "files": [
@@ -20,6 +22,10 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@socheatsok78/storybook-addon-vuetify": "^0.1.9",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/vue": "^6.0.26",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
@@ -29,6 +35,7 @@
     "autoprefixer": "^9",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.12.0",
@@ -37,6 +44,7 @@
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vue-cli-plugin-storybook": "~2.1.0",
     "vue-cli-plugin-tailwind": "~2.0.6",
     "vue-cli-plugin-vuetify": "~2.4.2",
     "vue-template-compiler": "^2.6.11",
