@@ -14,8 +14,12 @@
 </template>
 
 <script>
+import { ValidationProvider } from 'vee-validate';
+import { VTextField } from 'vuetify/lib';
+
 export default {
   name: 'HkTextField',
+  components: { ValidationProvider, VTextField },
   props: {
     name: String,
 

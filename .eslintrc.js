@@ -7,8 +7,8 @@ module.exports = {
     'plugin:vue/essential',
     'eslint:recommended',
     '@vue/prettier',
-    'plugin:import/errors',
-    'plugin:import/typescript',
+    // 'plugin:import/errors',
+    // 'plugin:import/typescript',
   ],
   parserOptions: {
     parser: 'babel-eslint',
