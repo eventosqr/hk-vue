@@ -16,12 +16,11 @@
 </template>
 
 <script>
-import HkConfirmDialogContent from './HkConfirmDialogContent';
 import { VDialog } from 'vuetify/lib';
 
 export default {
   name: 'HkConfirmDialog',
-  components: { VDialog, HkConfirmDialogContent },
+  components: { VDialog },
   props: {
     okLabel: {
       type: String,

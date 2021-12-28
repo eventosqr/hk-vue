@@ -12,12 +12,11 @@
 </template>
 
 <script>
-import HkDialog from '../HkDialog/HkDialog';
 import { VLayout, VBtn } from 'vuetify/lib';
 
 export default {
   name: 'HkConfirmDialogContent',
-  components: { HkDialog, VLayout, VBtn },
+  components: { VLayout, VBtn },
   props: {
     okLabel: String,
     cancelLabel: String,
